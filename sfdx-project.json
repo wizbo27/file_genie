@@ -5,7 +5,7 @@
       "default": true
     }
   ],
-  "name": "dx-empty",
+  "name": "File_Genie",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "55.0"
