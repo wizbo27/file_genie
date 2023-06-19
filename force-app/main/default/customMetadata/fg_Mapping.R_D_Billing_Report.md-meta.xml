@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>R&amp;D Billing Report</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Content_Document_Id__c</field>
+        <value xsi:type="xsd:string">0691U00000ZcpM5QAJ</value>
+    </values>
+    <values>
+        <field>File_Name__c</field>
+        <value xsi:type="xsd:string">R&amp;D Billing Report - WE {$_bes.Week_Ending_Date__c}</value>
+    </values>
+    <values>
+        <field>Mapping__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;sObjects&quot;:[
+      {
+         &quot;mapKey&quot;:&quot;_bes&quot;,
+         &quot;sObjectAPI&quot;:&quot;amc__Billing_Event_Item__c &quot;,
+         &quot;Query&quot;:&quot;select External_Charge_Number__c, Job_Name__c,sum(Total_Hours__c) Total_Hours__c, sum(ST_Hours__c) ST_Hours__c, sum(OT_Hours__c) OT_Hours__c, sum(DT_Hours__c) DT_Hours__c,  sum(Labor_Price__c) Labor_Price__c, sum(Per_Diem__c) Per_Diem__c, SUM(Expense_Invoice_Total__c) Expense_Invoice_Total__c from amc__Billing_Event_Item__c where amc__Billing_Event__r.Id = &apos;{Id}&apos; AND IsRnD__c = true AND External_Charge_Number__c != null AND Has_Exception__c = false AND status__c = &apos;Billable&apos; group by External_Charge_Number__c, Job_Name__c Order by External_Charge_Number__c, Job_Name__c&quot;
+      },
+      {
+         &quot;mapKey&quot;:&quot;_bei&quot;,
+         &quot;sObjectAPI&quot;:&quot;amc__Billing_Event_Item__c &quot;,
+         &quot;Query&quot;:&quot;select External_Charge_Number__c, Site_Name__c, Job_Name__c, Resource_First_Name__c, Resource_Last_Name__c, Resource_GID__c, Job_Type__c, Skill_Code__c, Time_Type__c, FORMAT(Week_Ending_Date__c), ST_Rate__c, ST_Hours__c, ST_Rate_With_Mark_Up__c, OT_Rate__c, OT_Hours__c, OT_Rate_With_Mark_Up__c, DT_Rate__c, DT_Hours__c, DT_Rate_With_Mark_Up__c, Total_Hours__c, Labor_Price__c, Per_Diem__c, Expense_Invoice_Total__c from amc__Billing_Event_Item__c where amc__Billing_Event__r.Id = &apos;{Id}&apos; AND IsRnD__c = true AND External_Charge_Number__c != null AND Has_Exception__c = false AND status__c = &apos;Billable&apos; Order by External_Charge_Number__c, Job_Name__c, Site_Name__c&quot;
+      },
+      {
+         &quot;mapKey&quot;:&quot;BillingEvent&quot;,
+         &quot;sObjectAPI&quot;:&quot;amc__Billing_Event__c &quot;,
+         &quot;Query&quot;:&quot;SELECT amc__Start_Date__c,amc__End_Date__c,amc__Project__r.Name FROM amc__Billing_Event__c WHERE Id = &apos;{Id}&apos;&quot;
+      }
+   ]
+}</value>
+    </values>
+    <values>
+        <field>Save_As__c</field>
+        <value xsi:type="xsd:string">Doc Type</value>
+    </values>
+    <values>
+        <field>Template_Doc_Type__c</field>
+        <value xsi:type="xsd:string">xlsx</value>
+    </values>
+    <values>
+        <field>sObject_API__c</field>
+        <value xsi:type="xsd:string">amc__Billing_Event__c</value>
+    </values>
+</CustomMetadata>

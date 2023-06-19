@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>International Resource Request</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Content_Document_Id__c</field>
+        <value xsi:type="xsd:string">0691U00000YbO4SQAV</value>
+    </values>
+    <values>
+        <field>File_Name__c</field>
+        <value xsi:type="xsd:string">International Resource Request {$_con.Site__r.Name}</value>
+    </values>
+    <values>
+        <field>Mapping__c</field>
+        <value xsi:type="xsd:string">{
+   &quot;sObjects&quot;:[
+      {
+         &quot;mapKey&quot;:&quot;_con&quot;,
+         &quot;sObjectAPI&quot;:&quot;amc__Contributor__c&quot;,
+         &quot;Query&quot;:&quot;SELECT Skill_Code__c,Site__r.Name,Related_Job__r.JobNumber__c,Project__r.Owner.Email,Project__r.Owner.Phone,Project__r.Owner.Name,FORMAT(Project__r.Project_Manager_Info__c),Project__r.Project_Admin_Info__c,Project__r.Site_Info__c,Project__r.District_Service_Manager_Info__c,Project__r.LTP_Engineer__r.Name,Project__r.LTP_Engineer__r.MobilePhone,Project__r.LTP_Engineer__r.Phone,Project__r.LTP_Engineer__r.Email,Project__r.Regional_Manager__r.Name,Project__r.Regional_Manager__r.MobilePhone,Project__r.Regional_Manager__r.Phone,Project__r.Regional_Manager__r.Email,Unit_Name__c,Unit__r.Generator_Frame__c,Unit__r.Turbine_Frame_Name__c,Unit__r.Unit_Outdoors__c,Related_Job__r.Lodging_Info__c,Related_Job__r.Drug_Screening__c,Related_Job__r.Time_and_Expense_Information__c,Related_Job__r.Local_Security_and_Transportation_Info__c,Related_Job__r.International_Travel_Instructions__c,Related_Job__r.Security_Requirements__c,Related_Job__r.Visa_work_permit_Instructions__c,Related_Job__r.Shift_Arrangement__c,Related_Job__r.Work_Scope__c,Related_Job__r.Event_ID__c,Related_Job__r.Travel_Directions__c,Site__r.Site_Specific_Requirements__c,Resource_Name__c,shift__c,Gid__c,Name,Vendor_Company_Name__c,Primary_Skill__c,Legacy_Skill_Code__r.Name,Start_Travel_Date__c,Onsite_Start__c,Onsite_End__c,Mode_of_travel__c,Mileage__c,(SELECT ID,Billing_Rate_Information__c,Effective_Date__c,Per_diem_for_Work__c,Per_Diem_For_Travel_IN__c,Per_Diem_For_Travel_OUT__c,Bill_Rate__r.Name FROM Contributor_Details__r) FROM amc__Contributor__c WHERE Project__c=&apos;{Id}&apos; AND Status__c IN (&apos;21&apos;,&apos;Confirmed&apos;) AND Direct_Hire__c=TRUE&quot;
+      }
+   ]
+}</value>
+    </values>
+    <values>
+        <field>Save_As__c</field>
+        <value xsi:type="xsd:string">Doc Type</value>
+    </values>
+    <values>
+        <field>Template_Doc_Type__c</field>
+        <value xsi:type="xsd:string">xlsx</value>
+    </values>
+    <values>
+        <field>sObject_API__c</field>
+        <value xsi:type="xsd:string">amc__Project__c</value>
+    </values>
+</CustomMetadata>

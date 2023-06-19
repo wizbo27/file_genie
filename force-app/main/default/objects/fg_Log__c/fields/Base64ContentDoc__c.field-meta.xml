@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Base64ContentDoc__c</fullName>
+    <description>Stores the base 64 of the template document being used.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Stores the base 64 of the template document being used.</inlineHelpText>
+    <label>Base64ContentDoc</label>
+    <length>131072</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

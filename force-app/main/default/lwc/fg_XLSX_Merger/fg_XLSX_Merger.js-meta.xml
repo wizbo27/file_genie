@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+
+    <masterLabel>File Genie XLSX Merger</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="recordIdIn" type="String" label="Record Id" role="inputOnly"/>
+            <property name="filterString" type="String" label="Query Filters" role="inputOnly"/>
+            <property name="contentDocIdIn" type="String" label="Content Document Id" role="inputOnly"/>
+            <property name="base64In" type="String" label="Base 64 String" role="inputOnly"/>
+            <property name="fileNameIn" type="String" label="File Name" role="inputOnly"/>
+            <property name="recDataIn" type="String" label="Data" role="inputOnly"/>
+            <property name="mappingIn" type="String" label="File Genie Mapping" role="inputOnly"/>
+            <property name="sObjectAPI" type="String" label="Base sObject API" role="inputOnly"/>
+            <property name="logIn" type="String" label="File Genie Log Id" role="inputOnly"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

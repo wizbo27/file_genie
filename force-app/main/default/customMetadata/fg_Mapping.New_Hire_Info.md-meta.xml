@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>New Hire Info</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Content_Document_Id__c</field>
+        <value xsi:type="xsd:string">0691U00000YbqPXQAZ</value>
+    </values>
+    <values>
+        <field>File_Name__c</field>
+        <value xsi:type="xsd:string">New Hire Info -- {$con.LastName}</value>
+    </values>
+    <values>
+        <field>Mapping__c</field>
+        <value xsi:type="xsd:string">{
+&quot;sObjects&quot;:[
+{
+&quot;mapKey&quot;:&quot;con&quot;,
+&quot;sObjectAPI&quot;:&quot;Contact&quot;,
+&quot;Query&quot;:&quot;SELECT MiddleName,OtherState,OtherCounty__c,OtherStreet,OtherCity,OtherPostalCode,Gender__c,Pay_Rate_Old__c,SSN__c,PS_ID__c,Hire_Date__c,Nickname__c,Birthdate,Job_Code__c,ReportsTo.Name,FirstName,LastName,Email,MobilePhone,OtherAddress,GID__c  FROM Contact WHERE ID=&apos;{Id}&apos;&quot;
+}
+]
+}</value>
+    </values>
+    <values>
+        <field>Save_As__c</field>
+        <value xsi:type="xsd:string">Doc Type</value>
+    </values>
+    <values>
+        <field>Template_Doc_Type__c</field>
+        <value xsi:type="xsd:string">xlsx</value>
+    </values>
+    <values>
+        <field>sObject_API__c</field>
+        <value xsi:type="xsd:string">Contact</value>
+    </values>
+</CustomMetadata>

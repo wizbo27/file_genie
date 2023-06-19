@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Dresser Rand Invoice Report</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Content_Document_Id__c</field>
+        <value xsi:type="xsd:string">069R0000002VkEwIAK</value>
+    </values>
+    <values>
+        <field>File_Name__c</field>
+        <value xsi:type="xsd:string">Dresser Rand Invoice Report -- Labor -- ${PO} - ${CustomerNumber} - ${ChargeNumber} - ${Amount} - ${Date}</value>
+    </values>
+    <values>
+        <field>Mapping__c</field>
+        <value xsi:type="xsd:string">{
+&quot;sObjects&quot;:[
+{
+&quot;mapKey&quot;:&quot;_be&quot;,
+&quot;sObjectAPI&quot;:&quot;amc__Billing_Event__c &quot;,
+&quot;Query&quot;:&quot;SELECT Name FROM amc__Billing_Event__c WHERE Id=&apos;{Id}&apos;&quot;
+}
+]
+}</value>
+    </values>
+    <values>
+        <field>Save_As__c</field>
+        <value xsi:type="xsd:string">Doc Type</value>
+    </values>
+    <values>
+        <field>Template_Doc_Type__c</field>
+        <value xsi:type="xsd:string">docx</value>
+    </values>
+    <values>
+        <field>sObject_API__c</field>
+        <value xsi:type="xsd:string">amc__Billing_Event__c</value>
+    </values>
+</CustomMetadata>
